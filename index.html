@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(255, 250, 233);
+        }
+        header{
+            background-color: rgb(229, 193, 101);
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+        }
+        header h1{
+            color: beige;
+            padding: 25px;
+        }
+        header nav{
+            width: 75%;
+            text-align: right;
+            padding: 1px;
+            margin-top: 20px;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 16px;
+            color: beige;
+        }
+        header img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        article, aside, .movies, details{
+            background-color: beige;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(169, 123, 6);
+            border-radius: 10px;
+            padding: 6px;
+            margin: 11px;
+            box-shadow: 3px 5px 2px rgb(229, 193, 101); /*right down blur size color*/
+        }
+        section{
+            display: flex;
+        }
+        section a{
+            color: rgb(236, 186, 59);
+        }
+        article{
+            width: 70%;
+        }
+        aside{
+            width: 25%;
+        }
+        aside ol{
+            list-style-type: none;
+        }
+        .movies{
+            width: 22%;
+        }
+        footer{
+            background-color: beige;
+            text-align: center;
+            font-size: small;
+            padding: 20px;
+            color: rgb(234, 195, 96);
+        }
+        details{
+            border-left: 5px solid rgb(211, 157, 18);
+        }
+        a:hover{
+            color: rgb(170, 141, 15);
+        }
+        article:hover, aside:hover, figure:hover{
+            box-shadow: 3px 5px 5px 3px rgb(231, 181, 55);
+            transform: scale(1.02);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/dbia-outdoor-movies-2025-01.jpg" alt="movies" width="100%">
+        <h1>Movies</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="more.html">More</a>
+            <a href="about_us.html">About Us</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Hello!</h2>
+                <p>This is our movies website.</p>
+                <p>You can check out any movies you want right here!</p>
+                <p>There are different kinds of movies here.</p>
+            </article>
+        </section>
+        <section>
+            <figure class="movies">
+                <img src="images/The_Call_of_the_Wild_poster.jpg" alt="the call of the wild" width="100%">
+                <figcaption>THE CALL OF THE WILD</figcaption>
+                <a href="https://www.youtube.com/watch?v=mZPSgy2NbUE" target="_blank">Trailer</a>
+            </figure>
+            <figure class="movies">
+                <img src="images/images (4).jpg" alt="SHAWSHANK" width="100%">
+                <figcaption>THE SHAWSHANK REDEMPTION</figcaption>
+                <a href="https://www.youtube.com/watch?v=PLl99DlL6b4" target="_blank">Trailer</a>
+            </figure>
+            <figure class="movies">
+                <img src="images/download.jpg" alt="alice" width="100%">
+                <figcaption>Alice In Wonderland</figcaption>
+                <a href="https://www.youtube.com/watch?v=9POCgSRVvf0" target="_blank">Trailer</a>
+            </figure>
+            <figure class="movies">
+                <img src="images/images (1).jpg" alt="Tangled" width="100%">
+                <figcaption>Tangled</figcaption>
+                <a href="https://www.youtube.com/watch?v=ycoY201RTRo" target="_blank">Trailer</a>
+            </figure>
+        </section>
+        <details>
+            <summary>Click to see more information</summary>
+            <p>If you want to watch more of our movies, you can click 'More' above.</p>
+        </details>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2025 | All Right Reserved</p>
+    </footer>
+</body>
+</html>
